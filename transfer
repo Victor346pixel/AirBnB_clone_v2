@@ -7,7 +7,11 @@ filename=$(basename "$BASH_SOURCE")
 file="$1"
 ip="$2"
 user="ubuntu"
+<<<<<<< HEAD
 key="~/.ssh/id_rsa"
+=======
+key="~/.ssh/school"
+>>>>>>> d8a5c279a13c517cb64a69e4ea3626970939d9f3
 
 if [ $# -eq 2 ]; then
         scp -i "$key" -o StrictHostKeyChecking=no "$path"/"$file" "$user"@"$ip":/home/"$user"/
